@@ -26,7 +26,7 @@ const chainMaker = {
   removeLink(position) {
     if (typeof position !== 'number'|| position <= 0) {
         this.chain = [];
-        throw new CustomError('Not implemented');
+        throw new Error('Not implemented');
       }
   if (this.chain.length !== 0) {
     if (position === 1) {

@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
-  if(!Array.isArray(arr)) throw new CustomError('Not array');
+  if(!Array.isArray(arr)) throw new Error('Not array');
   let transformedArray = arr;
   let sequences = ["--discard-next", "--discard-prev", "--double-next", "--double-prev"];
   transformedArray = transformedArray.map(value => {
