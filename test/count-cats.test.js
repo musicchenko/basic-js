@@ -73,7 +73,7 @@ describe('Count cats!', () => {
     });
   });
 
-  describe('functional requirements', () => {   
+  describe('functional requirements', () => {
     it.optional('level 1', () => {
       assert.equal(countCats([
         ["^^", ".", null, 0, false, "", NaN, "^^", 2, true, "dasdas", 1],
@@ -109,5 +109,3 @@ describe('Count cats!', () => {
     });
   });
 });
-
-

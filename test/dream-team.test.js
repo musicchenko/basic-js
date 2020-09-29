@@ -12,7 +12,7 @@ describe('Dream team', () => {
   describe('variable presence', () => {
     it.optional('function createDreamTeam exists', () => {
       expect(createDreamTeam).to.exist;
-      expect(createDreamTeam).to.be.instanceOf(Function);  
+      expect(createDreamTeam).to.be.instanceOf(Function);
     });
   });
 
@@ -140,12 +140,12 @@ describe('Dream team', () => {
           } else {
             res = 'FAIL';
           }
-        } 
+        }
         assert.equal(res, null);
     });
   });
 
-  describe('functional requirements ', () => {   
+  describe('functional requirements ', () => {
     it.optional('should handle whitespaces', () => {
       assert.equal(createDreamTeam([
         '   William Alston ',
